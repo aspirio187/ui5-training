@@ -1,0 +1,11 @@
+sap.ui.define([
+    "sap/ui/core/mvc/XMLView"
+], function (XMLView) {
+    'use strict';
+
+    XMLView.create({
+        viewName: "sap.ui.demo.test.view.App"
+    }).then(function (oView) {
+        oView.placeAt("content");
+    });
+});
