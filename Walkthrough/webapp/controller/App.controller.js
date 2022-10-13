@@ -4,11 +4,11 @@ sap.ui.define([
 ], function (Controller, MessageToast) {
     "user strict";
 
-    return Controller.extend("sap.ui.demo.Walkthrough.controller.App", {
+    return Controller.extend("sap.ui.demo.walkthrough.controller.App", {
         onShowHello: function () {
             // read msg from i18n model
             var oBundle = this.getView().getModel("i18n").getResourceBundle();
-            var sRecipient = this.getView().getModel().getProperty("/recipient/name");
+            var sRecipient = this.getView().getModel("recip").getProperty("/recipient/name");
             var sMsg = oBundle.getText("helloMsg", [sRecipient]);
 
             // show message

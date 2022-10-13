@@ -4,9 +4,9 @@ sap.ui.define([
     'use strict';
 
     new ComponentContainer({
-        name: "sap.ui.demo.Walkthrough",
+        name: "sap.ui.demo.walkthrough",
         settings: {
-            id: "Walkthrough"
+            id: "walkthrough"
         },
         async: true
     }).placeAt("content");

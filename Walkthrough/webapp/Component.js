@@ -4,7 +4,7 @@ sap.ui.define([
 ], function (UIComponent, JSONModel) {
     'use strict';
 
-    return UIComponent.extend("sap.ui.demo.Walkthrough.Component", {
+    return UIComponent.extend("sap.ui.demo.walkthrough.Component", {
         metadata: {
             interfaces: ["sap.ui.core.IAsyncContentCreation"],
             manifest: "json"
@@ -22,7 +22,7 @@ sap.ui.define([
             };
 
             var oModel = new JSONModel(oData);
-            this.setModel(oModel);
+            this.setModel(oModel, "recip");
         }
     });
 });
