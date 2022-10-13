@@ -39,6 +39,10 @@
           "supportedLocales": ["en_US"],
           "fallbackLocale": "en_US"
         }
+      },
+      "invoice": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "Invoices.json"
       }
     },
     "resources": {
